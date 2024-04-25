@@ -1,0 +1,357 @@
+/* App.css */
+
+/* Body styles */
+body {
+  background-color: #111827;
+  color: white;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+
+/* Mainpage styles */
+.mainpage {
+  position: relative;
+  height: 100vh;
+}
+.card{
+  background-color: #CFEED1;
+}
+
+
+/* Mainpage content styles */
+.mainpage-content {
+  margin-top:30px;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.mainpage-content h1 {
+  padding-top: 10%;
+  font-size: 3.5em;
+  padding-bottom: 5%;
+
+  
+}
+.mainpage-content h2 {
+  font-size: 1.3em;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+.mainpage-logos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding-top:8%;
+  margin-right:7%;
+}
+
+.img-fluid {
+  margin: 0px 8px;
+}
+
+.emoji {
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.emoji:hover {
+  transform: translateY(-5px); /* Move emoji up a bit on hover */
+}
+.img-top{
+  margin-top:10%;
+  margin-right:5%;
+  border:5px solid #D89C60;
+
+}
+/* Pop-up text styles */
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pop-up-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%; /* Limiting the width to 80% of the screen */
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Navbar styles */
+.navbar {
+  font-size: 25px;
+  background-color: #0C2D48;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001; /* Set higher z-index */
+  
+}
+.nav-link{
+  color:#D89C60;
+  font-weight:600;
+}
+.nav-link:hover{
+  color:#FF2768;
+  font-weight:600;
+}
+
+
+.navbar-brand{
+  /*ananth balaji*/
+  margin-left:1vw;
+  font-size: 20px;
+  color:#EAB308;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.yoyo1{
+  font-size: 20px;
+  color:#EAB308;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.yoyo1:hover{
+  color:#191970;
+}
+.yoyo{
+  margin-left:1vw;
+  font-size: 20px;
+  color:#ffffff;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.yoyo:hover{
+  color:#FF5733;
+}
+.navbar-nav {
+  margin-left: 80px;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-item{
+  font-size: 18px;
+  padding-left:2vw; 
+}
+.nav-item:hover {
+  padding-left:1vw;
+  padding-right: 1vw;
+  background-color: #B1D4E0; /* Set the background color on hover */
+  font-weight:bold;
+  border-radius: 100px;
+}
+
+.navbar-toggler {
+  position: relative;
+  color: #111827;
+}
+/* Navbar menu styles */
+.navbar-collapse {
+  position: relative;
+
+}
+
+
+
+/* Pop-up content animation styles */
+@keyframes popUpContent {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mainpage-content h1,
+.mainpage-content h2 {
+  opacity: 0;
+  animation: popUpContent 1s ease forwards;
+}
+
+/*Education.js  */
+/* Education.css */
+
+.container {
+  max-height: 80vh; /* Set a maximum height of 80% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling only when necessary */
+  padding-top: 60px; /* Add some padding for spacing */
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.container h6{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color:#E78484;
+  font-size:18px;
+}
+.container h5{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color:#FF2768;
+  font-size:18px;
+}
+.container h4{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color:#4E1A3D;
+  font-size:25px;
+}
+.container p{
+  color:#0C2D48;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+.container a{
+  text-decoration: none;
+  color:#000000;
+}
+
+/* Hide scrollbar */
+.container::-webkit-scrollbar {
+  width: 0; /* Hide the scrollbar */
+  background: transparent; /* Set the background color to transparent */
+}
+
+
+.container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 10px; /* Add rounded corners to the scrollbar thumb */
+}
+.container::-webkit-scrollbar-thumb:hover {
+  background: #7f1515; /* Change handle color on hover */
+}
+
+.container {
+  scrollbar-width: 100px;
+  scrollbar-color: #020617 #EAB308; /* Set the color of the scrollbar thumb and track on Firefox */
+}
+.card-title{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.card-title:hover{
+  color:#EAB308;
+}
+.page-navigation {
+  margin-top: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container1 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* App.css */
+
+.container3 {
+  margin-top:10vh;
+  padding: 50px; /* Add padding to the container */
+  max-height: 90vh; /* Set a maximum height */
+  overflow-y: auto; /* Add vertical scroll if needed */
+
+}
+.card-text{
+  font-size:20px;
+}
+.card1-img-top {
+  margin-left:25%;
+  max-width: 50%; /* Adjust the value as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.btn{
+  background-color:#FF2768;
+  color:#020617;
+  font-size: 18px;
+  color:white;
+  }
+.btn:hover{
+  background-color:#92DBF0;
+  color:#020617;
+}
+
+
+.pdf-viewer {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.pdf-container {
+  margin-top: 5%;;
+  max-height: 550px; /* Set your desired maximum height */
+  overflow-y: auto;
+}
+/*Projects*/
+
+.container4{
+  margin-top:60px;
+}
+
+.card-title{
+  padding-top:10px;
+}
+
+.home-ananth:hover{
+  color:#FF2768;
+}
+.mainpage-content{
+   color:#92DBF0;
+}
